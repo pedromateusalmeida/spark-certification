@@ -13,21 +13,25 @@
       
       
       
+        <link rel="prev" href="../pyspark_cheat_sheet/">
       
       
-      <link rel="icon" href="/favicon.ico">
+        <link rel="next" href="../createorplacetempview/">
+      
+      
+      <link rel="icon" href="../favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>Certificação do Faísca</title>
+        <title>Pratique Pyspark - Certificação do Faísca</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -46,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="/lightbox.css">
+      <link rel="stylesheet" href="../lightbox.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#funcoes-importantes" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +101,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="/." title="Certificação do Faísca" class="md-header__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
+    <a href=".." title="Certificação do Faísca" class="md-header__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12V9c0 2.2 3.6 4 8 4s8-1.8 8-4v3c0 .5-.2.9-.5 1.4-.8-.3-1.6-.4-2.5-.4-2.5 0-4.9 1.1-6.4 2.9C6.8 15.6 4 14 4 12m8-1c4.4 0 8-1.8 8-4s-3.6-4-8-4-8 1.8-8 4 3.6 4 8 4m-2.9 8.7-.3-.7.3-.7c.1-.2.2-.3.2-.5-3.1-.6-5.3-2-5.3-3.8v3c0 1.8 2.4 3.3 5.7 3.8-.2-.3-.4-.7-.6-1.1M17 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1m6 1c-.9 2.3-3.3 4-6 4s-5.1-1.7-6-4c.9-2.3 3.3-4 6-4s5.1 1.7 6 4m-3.5 0c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5Z"/></svg>
@@ -112,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Pratique Pyspark
             
           </span>
         </div>
@@ -224,7 +233,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Certificação do Faísca" class="md-nav__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
+    <a href=".." title="Certificação do Faísca" class="md-nav__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12V9c0 2.2 3.6 4 8 4s8-1.8 8-4v3c0 .5-.2.9-.5 1.4-.8-.3-1.6-.4-2.5-.4-2.5 0-4.9 1.1-6.4 2.9C6.8 15.6 4 14 4 12m8-1c4.4 0 8-1.8 8-4s-3.6-4-8-4-8 1.8-8 4 3.6 4 8 4m-2.9 8.7-.3-.7.3-.7c.1-.2.2-.3.2-.5-3.1-.6-5.3-2-5.3-3.8v3c0 1.8 2.4 3.3 5.7 3.8-.2-.3-.4-.7-.6-1.1M17 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1m6 1c-.9 2.3-3.3 4-6 4s-5.1-1.7-6-4c.9-2.3 3.3-4 6-4s5.1 1.7 6 4m-3.5 0c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5Z"/></svg>
@@ -253,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -272,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sobre_certificacao/" class="md-nav__link">
+      <a href="../sobre_certificacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/instalacao_local/" class="md-nav__link">
+      <a href="../instalacao_local/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -352,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/configuracao_otimizacao_cluster/" class="md-nav__link">
+      <a href="../configuracao_otimizacao_cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -372,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/boas_praticas/" class="md-nav__link">
+      <a href="../boas_praticas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -440,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/apache_spark/" class="md-nav__link">
+      <a href="../apache_spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lazy_evaluation/" class="md-nav__link">
+      <a href="../lazy_evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rdd_spark/" class="md-nav__link">
+      <a href="../rdd_spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tolerancia_falhas/" class="md-nav__link">
+      <a href="../tolerancia_falhas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/arquitetura/" class="md-nav__link">
+      <a href="../arquitetura/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/aqe/" class="md-nav__link">
+      <a href="../aqe/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -608,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/broadcast/" class="md-nav__link">
+      <a href="../broadcast/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/catalyst_optimizer/" class="md-nav__link">
+      <a href="../catalyst_optimizer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/cache_persist/" class="md-nav__link">
+      <a href="../cache_persist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/memoria_serializacao/" class="md-nav__link">
+      <a href="../memoria_serializacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -688,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/shuffle/" class="md-nav__link">
+      <a href="../shuffle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -708,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/transformacaos_acoes/" class="md-nav__link">
+      <a href="../transformacaos_acoes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/spark_ui/" class="md-nav__link">
+      <a href="../spark_ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -796,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/job/" class="md-nav__link">
+      <a href="../job/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/stages/" class="md-nav__link">
+      <a href="../stages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/storage/" class="md-nav__link">
+      <a href="../storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -856,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/executors/" class="md-nav__link">
+      <a href="../executors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -876,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/environment/" class="md-nav__link">
+      <a href="../environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dag/" class="md-nav__link">
+      <a href="../dag/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -921,6 +930,8 @@
       
   
   
+    
+  
   
     
     
@@ -930,14 +941,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
@@ -951,7 +960,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Operações
@@ -964,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pyspark_cheat_sheet/" class="md-nav__link">
+      <a href="../pyspark_cheat_sheet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -982,9 +991,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/funcoes_importante/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pratique Pyspark
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -993,6 +1020,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-importantes" class="md-nav__link">
+    Funções Importantes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formas-diferentes-de-escrever-a-mesma-coisa" class="md-nav__link">
+    Formas diferentes de escrever a mesma coisa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencia" class="md-nav__link">
+    Referência
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1004,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/createorplacetempview/" class="md-nav__link">
+      <a href="../createorplacetempview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1031,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/referencias/" class="md-nav__link">
+      <a href="../referencias/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1062,6 +1128,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#funcoes-importantes" class="md-nav__link">
+    Funções Importantes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formas-diferentes-de-escrever-a-mesma-coisa" class="md-nav__link">
+    Formas diferentes de escrever a mesma coisa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencia" class="md-nav__link">
+    Referência
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1072,8 +1167,420 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+  <h1>Pratique Pyspark</h1>
+
+<h2 id="funcoes-importantes">Funções Importantes</h2>
+<table>
+<thead>
+<tr>
+<th>Função</th>
+<th>Descrição</th>
+<th>Categoria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.sort()</td>
+<td>Ordena o DataFrame.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.orderBy()</td>
+<td>Ordena o DataFrame baseado em colunas.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.desc_null_first()</td>
+<td>Ordena de forma decrescente tratando NULLs primeiro.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.asc_null_first()</td>
+<td>Ordena de forma crescente tratando NULLs primeiro.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.desc_null_last()</td>
+<td>Ordena de forma decrescente colocando NULLs por último.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.asc_null_last()</td>
+<td>Ordena de forma crescente colocando NULLs por último.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.coalesce()</td>
+<td>Reduz o número de partições.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.repartition()</td>
+<td>Reparticiona o DataFrame em n partições.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.cache()</td>
+<td>Armazena o DataFrame na memória.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.unpersist()</td>
+<td>Remove o DataFrame do armazenamento em cache.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.storageLevel()</td>
+<td>Retorna o nível de armazenamento do DataFrame.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.filter()/.where()</td>
+<td>Filtra as linhas do DataFrame.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.select()</td>
+<td>Seleciona colunas específicas.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.agg()</td>
+<td>Agrega dados.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.groupBy()</td>
+<td>Agrupa os dados por colunas específicas.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.drop()</td>
+<td>Remove uma ou mais colunas.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.dropDuplicates()</td>
+<td>Remove linhas duplicadas.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.sample()</td>
+<td>Retorna uma amostra do DataFrame.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.UDF()</td>
+<td>Aplica uma função definida pelo usuário.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.foreach()</td>
+<td>Aplica uma função a cada linha do DataFrame.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.when()/.otherwise()</td>
+<td>Funcionalidade condicional.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.isNull()</td>
+<td>Verifica se um valor é NULL.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.window()</td>
+<td>Utilizado para funções de janela.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.summary()</td>
+<td>Retorna estatísticas resumidas.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.describe()</td>
+<td>Retorna estatísticas descritivas.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.union()</td>
+<td>Une dois DataFrames.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.unionByName()</td>
+<td>Une dois DataFrames por nome.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.join()</td>
+<td>Realiza um join entre dois DataFrames.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.na.drop()</td>
+<td>Remove linhas com valores NA.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.na.fill()</td>
+<td>Preenche valores NA com valores específicos.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.row()</td>
+<td>Retorna uma linha do DataFrame.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.col()</td>
+<td>Retorna uma coluna do DataFrame.</td>
+<td>Desconhecido</td>
+</tr>
+<tr>
+<td>.withColumn()</td>
+<td>Adiciona ou substitui uma coluna.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.withColumnRenamed()</td>
+<td>Renomeia uma coluna.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.approx_count_distinct()</td>
+<td>Retorna a contagem aproximada de valores distintos.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.array_contains()</td>
+<td>Verifica se um array contém um valor específico.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.contains()</td>
+<td>Verifica se uma string contém outra string.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.distinct()</td>
+<td>Retorna valores distintos.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.size()</td>
+<td>Retorna o tamanho de uma coluna de tipo array.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.explode()</td>
+<td>Transforma cada elemento de uma coluna de array em uma linha.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.explode_outer()</td>
+<td>Semelhante ao .explode() mas preserva linhas com NULL.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.posexplode()</td>
+<td>Semelhante ao .explode() mas adiciona uma coluna com índice.</td>
+<td>Wide</td>
+</tr>
+<tr>
+<td>.take()</td>
+<td>Retorna os primeiros n elementos.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.collect()</td>
+<td>Retorna todos os registros do DataFrame como uma lista.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.isNotNull()</td>
+<td>Verifica se um valor não é NULL.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.isin()</td>
+<td>Verifica se um valor está em uma lista de valores.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>createOrReplaceTempView()</td>
+<td>Cria ou substitui uma visão temporária.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>+ spark.sql('''codigo_sql''')</td>
+<td>Executa uma consulta SQL e retorna um DataFrame.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.count()</td>
+<td>Retorna a contagem de linhas.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.sum()</td>
+<td>Retorna a soma dos valores.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.avg()</td>
+<td>Retorna a média dos valores.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.min()/max()</td>
+<td>Retorna o valor mínimo/máximo.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.countApprox()</td>
+<td>Retorna uma contagem aproximada de valores distintos.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.count_distinct()</td>
+<td>Retorna a contagem de valores distintos.</td>
+<td>Ação</td>
+</tr>
+<tr>
+<td>.alias()</td>
+<td>Define um alias para o DataFrame.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.cast()</td>
+<td>Converte o tipo de coluna.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.regex_replace()</td>
+<td>Substitui substrings baseado em expressão regular.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.regex_extract()</td>
+<td>Extrai substrings usando expressão regular.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.startswith()</td>
+<td>Verifica se uma string começa com uma substring.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.endswith()</td>
+<td>Verifica se uma string termina com uma substring.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.month()</td>
+<td>Retorna o mês de uma data.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.hour()</td>
+<td>Retorna a hora de uma data.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.year()</td>
+<td>Retorna o ano de uma data.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.unix_timestamp()</td>
+<td>Converte a data para um timestamp Unix.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.from_unixtime()</td>
+<td>Retorna a data a partir de um timestamp Unix.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.from_utc_timestamp()</td>
+<td>Retorna a data a partir de um UTC timestamp.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.datediff()</td>
+<td>Retorna a diferença entre duas datas.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.to_date()</td>
+<td>Converte uma string para uma data.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.current_date()</td>
+<td>Retorna a data atual.</td>
+<td>Narrow</td>
+</tr>
+<tr>
+<td>.lit()</td>
+<td>Retorna uma coluna de valor constante.</td>
+<td>Narrow</td>
+</tr>
+</tbody>
+</table>
+<h2 id="formas-diferentes-de-escrever-a-mesma-coisa">Formas diferentes de escrever a mesma coisa</h2>
+<div style="text-align: justify">
+No Spark, é possível expressar a mesma operação de várias maneiras, graças à sua flexibilidade e design voltado ao usuário. Abaixo, apresento exemplos dessa versatilidade usando funções comuns, como filtragem, joins e ordenação.
+<br /><br />
+<strong>Filter:</strong>
+</div>
+
+<ul>
+<li><code>df.filter(df.column != ‘xxxxx’)</code></li>
+<li><code>df.filter(~(df.column == ‘xxxxx’))</code></li>
+<li><code>df.filter(col(‘column’) != ‘xxxxx’)</code></li>
+<li><code>df.filter(column != ‘xxxxxx</code>)`</li>
+</ul>
+<p><br /></p>
+<div style="text-align: justify">
+<strong>Joins:</strong>
+</div>
+
+<ul>
+<li><code>df1.join(df2, col(‘df1.column’) == col(‘df2.column’), ‘left’)</code></li>
+<li><code>df1.join(df2, df1.column == df2.column, ‘left’)</code></li>
+<li><code>df1.join(df2, df1[‘column’] == df2[‘column’], ‘left’)</code></li>
+<li><code>df1.join(df2, [‘column’, ‘column’], ‘left’)</code> </li>
+</ul>
+<p><br /></p>
+<div style="text-align: justify">
+<strong>sort e orderBy:</strong>
+</div>
+
+<ul>
+<li><code>df.sort(df.column.desc())</code></li>
+<li><code>df.sort(col(‘column’).desc())</code></li>
+<li><code>df.sort(desc(‘column’))</code></li>
+<li><code>df.sort(desc(col(‘column’)))</code></li>
+<li><code>df.sort(col(‘column’), ascending = false)</code></li>
+</ul>
+<h2 id="referencia">Referência</h2>
+<p><a href="https://spark.apache.org/docs/latest/api/python/index.html">Documentação Pyspark</a></p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1201,12 +1708,12 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "navigation.tracking", "search.suggest", "content.code.annotate", "content.code.copy", "stylesheets/extra.css"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "navigation.tracking", "search.suggest", "content.code.annotate", "content.code.copy", "stylesheets/extra.css"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
       
-        <script src="/lightbox.js"></script>
+        <script src="../lightbox.js"></script>
       
     
   </body>

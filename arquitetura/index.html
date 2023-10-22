@@ -13,21 +13,25 @@
       
       
       
+        <link rel="prev" href="../tolerancia_falhas/">
       
       
-      <link rel="icon" href="/favicon.ico">
+        <link rel="next" href="../aqe/">
+      
+      
+      <link rel="icon" href="../favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>Certificação do Faísca</title>
+        <title>(Início) Níveis de Paralelização - Certificação do Faísca</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -46,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="/lightbox.css">
+      <link rel="stylesheet" href="../lightbox.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#arquitetura" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +101,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="/." title="Certificação do Faísca" class="md-header__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
+    <a href=".." title="Certificação do Faísca" class="md-header__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12V9c0 2.2 3.6 4 8 4s8-1.8 8-4v3c0 .5-.2.9-.5 1.4-.8-.3-1.6-.4-2.5-.4-2.5 0-4.9 1.1-6.4 2.9C6.8 15.6 4 14 4 12m8-1c4.4 0 8-1.8 8-4s-3.6-4-8-4-8 1.8-8 4 3.6 4 8 4m-2.9 8.7-.3-.7.3-.7c.1-.2.2-.3.2-.5-3.1-.6-5.3-2-5.3-3.8v3c0 1.8 2.4 3.3 5.7 3.8-.2-.3-.4-.7-.6-1.1M17 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1m6 1c-.9 2.3-3.3 4-6 4s-5.1-1.7-6-4c.9-2.3 3.3-4 6-4s5.1 1.7 6 4m-3.5 0c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5Z"/></svg>
@@ -112,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              (Início) Níveis de Paralelização
             
           </span>
         </div>
@@ -224,7 +233,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Certificação do Faísca" class="md-nav__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
+    <a href=".." title="Certificação do Faísca" class="md-nav__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12V9c0 2.2 3.6 4 8 4s8-1.8 8-4v3c0 .5-.2.9-.5 1.4-.8-.3-1.6-.4-2.5-.4-2.5 0-4.9 1.1-6.4 2.9C6.8 15.6 4 14 4 12m8-1c4.4 0 8-1.8 8-4s-3.6-4-8-4-8 1.8-8 4 3.6 4 8 4m-2.9 8.7-.3-.7.3-.7c.1-.2.2-.3.2-.5-3.1-.6-5.3-2-5.3-3.8v3c0 1.8 2.4 3.3 5.7 3.8-.2-.3-.4-.7-.6-1.1M17 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1m6 1c-.9 2.3-3.3 4-6 4s-5.1-1.7-6-4c.9-2.3 3.3-4 6-4s5.1 1.7 6 4m-3.5 0c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5Z"/></svg>
@@ -253,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -272,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sobre_certificacao/" class="md-nav__link">
+      <a href="../sobre_certificacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -332,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/instalacao_local/" class="md-nav__link">
+      <a href="../instalacao_local/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -352,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/configuracao_otimizacao_cluster/" class="md-nav__link">
+      <a href="../configuracao_otimizacao_cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -372,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/boas_praticas/" class="md-nav__link">
+      <a href="../boas_praticas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -440,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/apache_spark/" class="md-nav__link">
+      <a href="../apache_spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lazy_evaluation/" class="md-nav__link">
+      <a href="../lazy_evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rdd_spark/" class="md-nav__link">
+      <a href="../rdd_spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tolerancia_falhas/" class="md-nav__link">
+      <a href="../tolerancia_falhas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -525,6 +534,8 @@
       
   
   
+    
+  
   
     
     
@@ -534,14 +545,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -555,7 +564,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Arquitetura Spark
@@ -566,9 +575,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/arquitetura/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    (Início) Níveis de Paralelização
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -577,6 +606,122 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-de-paralelizacao-de-dados" class="md-nav__link">
+    Nível de paralelização de dados
+  </a>
+  
+    <nav class="md-nav" aria-label="Nível de paralelização de dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spark-session" class="md-nav__link">
+    Spark Session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spark-driver" class="md-nav__link">
+    Spark Driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster-manager" class="md-nav__link">
+    Cluster Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workersexecutores" class="md-nav__link">
+    Workers/Executores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    Slots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-de-paralelizacao-das-tarefas" class="md-nav__link">
+    Nível de paralelização das tarefas
+  </a>
+  
+    <nav class="md-nav" aria-label="Nível de paralelização das tarefas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#job" class="md-nav__link">
+    Job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage" class="md-nav__link">
+    Stage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task" class="md-nav__link">
+    Task
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    Conclusão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -588,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/aqe/" class="md-nav__link">
+      <a href="../aqe/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -608,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/broadcast/" class="md-nav__link">
+      <a href="../broadcast/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/catalyst_optimizer/" class="md-nav__link">
+      <a href="../catalyst_optimizer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/cache_persist/" class="md-nav__link">
+      <a href="../cache_persist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/memoria_serializacao/" class="md-nav__link">
+      <a href="../memoria_serializacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -688,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/shuffle/" class="md-nav__link">
+      <a href="../shuffle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -708,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/transformacaos_acoes/" class="md-nav__link">
+      <a href="../transformacaos_acoes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/spark_ui/" class="md-nav__link">
+      <a href="../spark_ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -796,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/job/" class="md-nav__link">
+      <a href="../job/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/stages/" class="md-nav__link">
+      <a href="../stages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/storage/" class="md-nav__link">
+      <a href="../storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -856,7 +1001,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/executors/" class="md-nav__link">
+      <a href="../executors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -876,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/environment/" class="md-nav__link">
+      <a href="../environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,7 +1041,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dag/" class="md-nav__link">
+      <a href="../dag/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pyspark_cheat_sheet/" class="md-nav__link">
+      <a href="../pyspark_cheat_sheet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -984,7 +1129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/funcoes_importante/" class="md-nav__link">
+      <a href="../funcoes_importante/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1004,7 +1149,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/createorplacetempview/" class="md-nav__link">
+      <a href="../createorplacetempview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1031,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/referencias/" class="md-nav__link">
+      <a href="../referencias/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1061,6 +1206,112 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-de-paralelizacao-de-dados" class="md-nav__link">
+    Nível de paralelização de dados
+  </a>
+  
+    <nav class="md-nav" aria-label="Nível de paralelização de dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spark-session" class="md-nav__link">
+    Spark Session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spark-driver" class="md-nav__link">
+    Spark Driver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster-manager" class="md-nav__link">
+    Cluster Manager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workersexecutores" class="md-nav__link">
+    Workers/Executores
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    Slots
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-de-paralelizacao-das-tarefas" class="md-nav__link">
+    Nível de paralelização das tarefas
+  </a>
+  
+    <nav class="md-nav" aria-label="Nível de paralelização das tarefas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#job" class="md-nav__link">
+    Job
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage" class="md-nav__link">
+    Stage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task" class="md-nav__link">
+    Task
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    Conclusão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1072,8 +1323,164 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="arquitetura">Arquitetura</h1>
+<div style="text-align: justify">
+Vamos abordar aqui a arquitetura tendo como perspectiva dois níveis de paralelização são eles o de dados e o de tarefas. Vamos iniciar com o de dados, pois ele trata sobre a infraestrutura.
+O primeiro ponto que temos que trazer é que o Spark é um contêiner Java Virtual Machine (JVM) = O. Eu tive essa reação quando descobri isso. 
+<br /><br />
+<strong>Java Virtual Machine (JVM):</strong><br /><br />
+A JVM é uma máquina virtual que permite que um computador execute aplicações Java. Ela converte o bytecode Java, que é independente de plataforma, em instruções específicas da máquina para execução. Isso permite que o código Java seja escrito uma vez e executado em qualquer dispositivo ou sistema operacional que tenha uma JVM.
+<br /><br />
+<strong>Containers:</strong><br /><br />
+Containers são uma tecnologia de virtualização que permite empacotar uma aplicação e todas as suas dependências, bibliotecas e configurações em um único pacote. Ao contrário das máquinas virtuais tradicionais, os containers compartilham o mesmo sistema operacional do host, mas têm espaços de execução isolados. Isso os torna leves e rápidos.
+<br /><br />
+Outra informação relevante sobre é que a paralelização de dados envolve dividir os dados em múltiplas partições, permitindo que cada uma seja processada de forma independente em nós distintos de um cluster. No Spark, essa abordagem possibilita a execução simultânea de operações em diversas partições, otimizando consideravelmente a velocidade de processamento.
+</div>
+<p><br /></p>
+<h2 id="nivel-de-paralelizacao-de-dados">Nível de paralelização de dados</h2>
+<div style="text-align: justify">
+Dado essa contextualização, podemos introduzir a infraestrutura do spark. Abaixo temos algumas imagens de como essa arquitetura é representada:
+</div>
+<p><br /></p>
+<p><img alt="RDD" src="../paralelizacao_dados.webp" /></p>
+<p><img alt="RDD" src="../0_tBMRTDHNwz9XB-oc.webp" /></p>
+<div style="text-align: justify">
+Vamos explorar os seguintes itens dos desenhos acima: sparkSession, Spark Driver, Cluster Manager, Executer, Slot
+</div>
+
+<h3 id="spark-session">Spark Session</h3>
+<div style="text-align: justify">
+A Spark Session funciona como o principal ponto de entrada para interagir com as funcionalidades do Apache Spark. Oferecendo uma interface global para realizar tarefas rotineiras, facilita a interação com os dados e assegura uma abordagem uniforme ao seu processamento. Por meio da Spark Session, os usuários podem executar SQL, Rspark, Pyspark e Scala em seus conjuntos de dados.
+<br /><br />
+</div>
+
+<h3 id="spark-driver">Spark Driver</h3>
+<div style="text-align: justify">
+<strong>Principais responsabilidades do Spark Driver:</strong><br /><br />
+</div>
+<p>Criação do Spark Session/Context.<br />
+Análise e otimização do plano de execução.<br />
+Segmentação em tarefas.<br />
+Distribuição do código para os executores.<br />
+Gerenciamento do DAG e da linhagem (Lineage).<br />
+Coordenação dos executores.<br />
+Coleta dos resultados.<br />
+Monitoramento e recuperação em caso de falhas.<br />
+Finalização e encerramento da aplicação.<br />
+Atua como o nó mestre no contexto de processamento distribuído.<br /></p>
+<div style="text-align: justify">
+<strong>Resumo:</strong> O Spark Driver atua como o coração da aplicação Spark, tomando conta de todo o processamento. Ele coordena a execução em um ambiente de cluster, otimiza o plano de execução e garante confiabilidade e tolerância a falhas durante o tratamento dos dados.
+<br /><br />
+</div>
+
+<h3 id="cluster-manager">Cluster Manager</h3>
+<div style="text-align: justify">
+<strong>Principais responsabilidades do Cluster Manager:</strong><br /><br />
+</div>
+<p>Alocação de recursos.<br />
+Monitoramento dos recursos.<br /></p>
+<div style="text-align: justify">
+<strong>Resumo:</strong> O Cluster Manager do Spark desempenha uma função vital no gerenciamento de recursos e assegura a execução eficiente dos aplicativos Spark em um ambiente de cluster distribuído.
+<br /><br />
+<strong>Curiosidade:</strong> O Spark suporta diversos gerenciadores de cluster, como seu próprio gerenciador Standalone, bem como Apache Mesos, Hadoop YARN e Kubernetes.
+<br /><br />
+</div>
+
+<h3 id="workersexecutores">Workers/Executores</h3>
+<div style="text-align: justify">
+<strong>Principais atividades dos Workers/Executores:</strong><br /><br />
+</div>
+<p>Execução de tarefas.<br />
+Processamento paralelo.<br />
+Acesso a dados, seja em memória ou em disco.<br />
+Realização de transformações e ações.<br />
+Gerenciamento de partições.<br />
+Comunicação com o Spark Driver.<br /></p>
+<div style="text-align: justify">
+<strong>Resumo:</strong> O executor, também conhecido como worker, tem a crucial responsabilidade de conduzir o processamento distribuído real no Spark. Ele executa tarefas, processa dados em paralelo e mantém comunicação contínua com o Spark Driver. Essas ações garantem eficiência na execução e capacidade de recuperação diante de possíveis falhas no ambiente distribuído.
+<br /><br />
+</div>
+
+<p><img alt="worker_arquitetura" src="../arquitetura_worker.webp" /></p>
+<h3 id="slots">Slots</h3>
+<div style="text-align: justify">
+Um slot é a menor unidade de paralelismo em dados no Spark. O número de slots em um executor determina quantas tarefas podem ser realizadas simultaneamente. Por exemplo, se um executor possui 4 slots, ele pode processar até 4 tarefas ao mesmo tempo, desde que estas tarefas estejam prontas para serem executadas. Os slots são usados para regular a quantidade de recursos, tais como CPU e memória, que são destinados a cada tarefa.
+<br /><br />
+</div>
+
+<div style="text-align: justify">
+<strong>Resumo:</strong> Os slots têm uma importância vital na determinação do paralelismo e no gerenciamento de recursos no Apache Spark. Eles asseguram que o Spark utilize de maneira eficaz os recursos disponíveis no cluster, possibilitando o processamento paralelo de tarefas e garantindo eficiência e escalabilidade em um ambiente distribuído.
+<br /><br />
+</div>
+
+<h2 id="nivel-de-paralelizacao-das-tarefas">Nível de paralelização das tarefas</h2>
+<div style="text-align: justify">
+Vamos discutir o nível de paralelização das tarefas. Mas, primeiramente, o que significa esse nível? A paralelização de tarefas refere-se à execução simultânea de diferentes operações em várias partições de dados. Quando aplicamos uma transformação ou ação em um RDD (Resilient Distributed Dataset) ou DataFrame no Spark, resulta-se em uma série de tarefas que são processadas em paralelo nos diferentes nós do cluster. Para aqueles familiarizados com o Airflow, a menção de DAG (Directed Acyclic Graph) trará lembranças, o que faz sentido, uma vez que neste contexto, o nível de paralelização é uma DAG, mas no Spark.
+<br /><br />
+</div>
+<div style="text-align: justify">
+A seguir, apresentamos uma representação visual de como essa operação se desenrola. Em etapas futuras, vamos explorar esse aspecto visualmente dentro do Spark. No entanto, neste instante inicial, nosso foco será estritamente conceitual.
+<br /><br />
+</div>
+<p><img alt="spartk_tarefas" src="../spark_tarfas.png" /><br />
+<img alt="spartk_tarefas" src="../spark_tarfas2.png" /><br /></p>
+<h3 id="job">Job</h3>
+<div style="text-align: justify">
+Um job é uma unidade de trabalho ou um conjunto de tarefas que precisam ser realizadas no cluster para cumprir uma operação específica em um conjunto de dados. Quando executamos um aplicativo Spark, ele cria um plano de execução lógica para as transformações definidas pelo usuário em seus RDDs ou DataFrames. Este plano é representado como um DAG (Directed Acyclic Graph), mostrando a sequência de transformações aplicadas aos dados para obter o resultado almejado.
+<br /><br />
+</div>
+<div style="text-align: justify">
+<strong>Resumo:</strong> No Spark, um job é uma unidade de trabalho que envolve transformações realizadas em um conjunto de dados distribuído, buscando alcançar um determinado resultado.
+<br /><br />
+</div>
+
+<h3 id="stage">Stage</h3>
+<div style="text-align: justify">
+No contexto do Apache Spark, um "stage" representa uma divisão lógica do plano de execução que abrange uma série de transformações. Estas transformações podem ser realizadas simultaneamente, sem a necessidade de transferir dados entre as partições. Quando ativamos um aplicativo Spark, ele constrói um plano de execução lógica, representado por um DAG (Directed Acyclic Graph), com base nas transformações determinadas pelo usuário em seus RDDs. Este plano lógico é então fragmentado em vários "stages", e cada "stage" compreende um conjunto de transformações (ou tasks) que são processadas de forma paralela.
+<br /><br />
+</div>
+<div style="text-align: justify">
+<strong>Resumo:</strong> No Spark, um "stage" é uma divisão lógica do plano de execução e simboliza um conjunto de transformações processadas simultaneamente.
+<br /><br />
+</div>
+
+<h3 id="task">Task</h3>
+<div style="text-align: justify">
+Uma "task", no Spark, é a menor unidade de execução e representa uma operação específica feita em uma partição de dados. As tasks são a unidade básica de trabalho no Spark. Elas são enviadas aos executores do cluster para processamento paralelo. Mais especificamente, uma task é destinada a um slot específico do executor.
+<br /><br />
+</div>
+<div style="text-align: justify">
+<strong>Resumo:</strong> No Spark, uma "task" é a menor unidade de trabalho e denota uma operação específica realizada em uma partição de dados.
+<br /><br />
+</div>
+
+<h2 id="conclusao">Conclusão</h2>
+<div style="text-align: justify">
+Como se inter-relacionam o nível de paralelização de dados e o nível de tarefas? O menor componente no nível de dados é o slot do executor. Este recebe do driver tasks (trechos de código) que são de sua responsabilidade executar em seu slot. No slot, dispomos de recursos computacionais, tais como CPU e memória RAM. Para finalizar, para que o código seja processado, precisamos de uma partição do nosso RDD juntamente com uma ação.
+<br /><br />
+</div>
+
+<h2 id="referencias">Referências</h2>
+<p><a href="https://www.databricks.com/spark/getting-started-with-apache-spark">Getting Started with Apache Spark - Databricks</a><br />
+<a href="https://sparkbyexamples.com/spark/what-is-apache-spark-driver/">What is Apache Spark Driver? - SparkByExamples</a><br />
+<a href="https://kontext.tech/article/1166/spark-basics-application-driver-executor-job-stage-and-task-walkthrough">Spark Basics: Application, Driver, Executor, Job, Stage and Task</a><br /><a href="https://blog.knoldus.com/understanding-spark-application-concepts/">Walkthrough - Kontext</a><br />
+<a href="https://blog.devgenius.io/spark-architecture-101-concepts-application-f5260783ac9d">Understanding Spark Application Concepts - Knoldus Blog</a><br />
+<a href="https://www.databricks.com/glossary/what-are-spark-applications">Spark Architecture 101 - Concepts &amp; Application - DevGenius Blog</a><br />
+<a href="https://medium.com/@thisun.17/spark-jobs-stages-and-tasks-930b7487bf40">What Are Spark Applications? - Databricks</a><br />
+<a href="https://medium.com/@thisun.17/spark-jobs-stages-and-tasks-930b7487bf40">Spark: Jobs, Stages and Tasks - Medium by Thisun</a><br />
+<a href="https://blog.dsacademy.com.br/serie-spark-e-databricks-parte-1-arquitetura-e-componentes-do-apache-spark/">Série Spark e Databricks - Parte 1: Arquitetura e Componentes do Apache</a><br /><br /></p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1201,12 +1608,12 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "navigation.tracking", "search.suggest", "content.code.annotate", "content.code.copy", "stylesheets/extra.css"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "navigation.tracking", "search.suggest", "content.code.annotate", "content.code.copy", "stylesheets/extra.css"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
       
-        <script src="/lightbox.js"></script>
+        <script src="../lightbox.js"></script>
       
     
   </body>

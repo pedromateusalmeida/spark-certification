@@ -13,21 +13,25 @@
       
       
       
+        <link rel="prev" href="../instalacao_local/">
       
       
-      <link rel="icon" href="/favicon.ico">
+        <link rel="next" href="../boas_praticas/">
+      
+      
+      <link rel="icon" href="../favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>Certificação do Faísca</title>
+        <title>Configuração e Otimização do Cluster - Certificação do Faísca</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -46,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="/lightbox.css">
+      <link rel="stylesheet" href="../lightbox.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#configuracao-e-otimizacao-do-cluster" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +101,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="/." title="Certificação do Faísca" class="md-header__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
+    <a href=".." title="Certificação do Faísca" class="md-header__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12V9c0 2.2 3.6 4 8 4s8-1.8 8-4v3c0 .5-.2.9-.5 1.4-.8-.3-1.6-.4-2.5-.4-2.5 0-4.9 1.1-6.4 2.9C6.8 15.6 4 14 4 12m8-1c4.4 0 8-1.8 8-4s-3.6-4-8-4-8 1.8-8 4 3.6 4 8 4m-2.9 8.7-.3-.7.3-.7c.1-.2.2-.3.2-.5-3.1-.6-5.3-2-5.3-3.8v3c0 1.8 2.4 3.3 5.7 3.8-.2-.3-.4-.7-.6-1.1M17 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1m6 1c-.9 2.3-3.3 4-6 4s-5.1-1.7-6-4c.9-2.3 3.3-4 6-4s5.1 1.7 6 4m-3.5 0c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5Z"/></svg>
@@ -112,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Configuração e Otimização do Cluster
             
           </span>
         </div>
@@ -224,7 +233,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Certificação do Faísca" class="md-nav__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
+    <a href=".." title="Certificação do Faísca" class="md-nav__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12V9c0 2.2 3.6 4 8 4s8-1.8 8-4v3c0 .5-.2.9-.5 1.4-.8-.3-1.6-.4-2.5-.4-2.5 0-4.9 1.1-6.4 2.9C6.8 15.6 4 14 4 12m8-1c4.4 0 8-1.8 8-4s-3.6-4-8-4-8 1.8-8 4 3.6 4 8 4m-2.9 8.7-.3-.7.3-.7c.1-.2.2-.3.2-.5-3.1-.6-5.3-2-5.3-3.8v3c0 1.8 2.4 3.3 5.7 3.8-.2-.3-.4-.7-.6-1.1M17 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1m6 1c-.9 2.3-3.3 4-6 4s-5.1-1.7-6-4c.9-2.3 3.3-4 6-4s5.1 1.7 6 4m-3.5 0c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5Z"/></svg>
@@ -253,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -272,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sobre_certificacao/" class="md-nav__link">
+      <a href="../sobre_certificacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -289,6 +298,8 @@
       
   
   
+    
+  
   
     
     
@@ -298,14 +309,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -319,7 +328,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Configuração e Instalação
@@ -332,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/instalacao_local/" class="md-nav__link">
+      <a href="../instalacao_local/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -350,9 +359,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/configuracao_otimizacao_cluster/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configuração e Otimização do Cluster
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -361,6 +388,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-e-otimizacao-do-cluster" class="md-nav__link">
+    Configuração e Otimização do Cluster
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-utilizar-na-configuracao-do-meu-sparksession" class="md-nav__link">
+    O que utilizar na configuração do meu sparkSession?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -372,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/boas_praticas/" class="md-nav__link">
+      <a href="../boas_praticas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -440,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/apache_spark/" class="md-nav__link">
+      <a href="../apache_spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,7 +526,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lazy_evaluation/" class="md-nav__link">
+      <a href="../lazy_evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rdd_spark/" class="md-nav__link">
+      <a href="../rdd_spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +566,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tolerancia_falhas/" class="md-nav__link">
+      <a href="../tolerancia_falhas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/arquitetura/" class="md-nav__link">
+      <a href="../arquitetura/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/aqe/" class="md-nav__link">
+      <a href="../aqe/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -608,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/broadcast/" class="md-nav__link">
+      <a href="../broadcast/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,7 +694,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/catalyst_optimizer/" class="md-nav__link">
+      <a href="../catalyst_optimizer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/cache_persist/" class="md-nav__link">
+      <a href="../cache_persist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,7 +734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/memoria_serializacao/" class="md-nav__link">
+      <a href="../memoria_serializacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -688,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/shuffle/" class="md-nav__link">
+      <a href="../shuffle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -708,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/transformacaos_acoes/" class="md-nav__link">
+      <a href="../transformacaos_acoes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +842,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/spark_ui/" class="md-nav__link">
+      <a href="../spark_ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -796,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/job/" class="md-nav__link">
+      <a href="../job/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/stages/" class="md-nav__link">
+      <a href="../stages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/storage/" class="md-nav__link">
+      <a href="../storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -856,7 +922,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/executors/" class="md-nav__link">
+      <a href="../executors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -876,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/environment/" class="md-nav__link">
+      <a href="../environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,7 +962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dag/" class="md-nav__link">
+      <a href="../dag/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,7 +1030,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pyspark_cheat_sheet/" class="md-nav__link">
+      <a href="../pyspark_cheat_sheet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -984,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/funcoes_importante/" class="md-nav__link">
+      <a href="../funcoes_importante/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1004,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/createorplacetempview/" class="md-nav__link">
+      <a href="../createorplacetempview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1031,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/referencias/" class="md-nav__link">
+      <a href="../referencias/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1062,6 +1128,35 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao-e-otimizacao-do-cluster" class="md-nav__link">
+    Configuração e Otimização do Cluster
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-utilizar-na-configuracao-do-meu-sparksession" class="md-nav__link">
+    O que utilizar na configuração do meu sparkSession?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1072,8 +1167,172 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+  <h1>Configuração e Otimização do Cluster</h1>
+
+<h2 id="configuracao-e-otimizacao-do-cluster">Configuração e Otimização do Cluster</h2>
+<div style="text-align: justify">
+A importância de configurar corretamente um cluster Spark é inegável. Uma configuração adequada é crucial, já que ela impacta diretamente a performance, eficiência e escalabilidade quando se trata de processamento distribuído de dados. Abordaremos os problemas que podem surgir de uma configuração inadequada e também os benefícios de um ajuste correto.
+<br />
+</div>
+<p><br /></p>
+<div class="admonition warning">
+<p class="admonition-title">Consequências de uma Má Configuração:</p>
+<ul>
+<li><strong>Queda de Performance:</strong> Performance comprometida pode significar perda de produtividade.</li>
+<li><strong>Subutilização de Recursos:</strong> Recursos valiosos, como memória e CPU, podem ser desperdiçados.</li>
+<li><strong>Falhas Frequentes:</strong> Configurações inadequadas podem causar instabilidades e falhas constantes.</li>
+<li><strong>Aumento dos Custos:</strong> Em ambientes de nuvem, os custos podem escalar rapidamente com má configuração.</li>
+<li><strong>Dificuldades no Debug:</strong> Diagnóstico de problemas torna-se mais complicado, levando mais tempo para resolução.</li>
+<li><strong>Limitações de Escalabilidade:</strong> Escalar para lidar com mais dados pode se tornar um desafio.</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Benefícios de uma Configuração Adequada:</p>
+<ul>
+<li><strong>Performance Otimizada:</strong> Processamento mais ágil e eficiente de grandes volumes de dados.</li>
+<li><strong>Utilização Eficiente de Recursos:</strong> Maximização dos recursos disponíveis e evitando desperdícios.</li>
+<li><strong>Escalabilidade:</strong> Expansão facilitada do cluster para atender a demandas crescentes.</li>
+<li><strong>Confiabilidade:</strong> Maior estabilidade e recuperação ágil após falhas.</li>
+<li><strong>Gerenciamento Equilibrado:</strong> Distribuição uniforme da carga de trabalho entre os nós do cluster.</li>
+<li><strong>Menor Latência:</strong> Respostas mais ágeis em operações interativas, como consultas SQL.</li>
+</ul>
+</div>
+<div style="text-align: justify">
+<strong>Considerações ao Configurar um Cluster:</strong><br />
+</div>
+
+<ul>
+<li>Volume de dados<br /></li>
+<li>Quantidade de memória disponível<br /></li>
+<li>Número de cores de processamento<br /></li>
+<li>Memória alocada para o driver<br /></li>
+<li>Memória alocada para o executor<br /></li>
+<li>Cores alocadas para o executor<br /></li>
+<li>Cores alocadas para o driver<br /></li>
+<li>Decisão sobre armazenamento em disco ou na RAM<br /></li>
+<li>Definição da quantidade e tamanho ideal de partições do RDD<br /></li>
+<li>Configuração de memória para serialização<br /></li>
+<li>Ativação do Adaptive Query Execution (AQE) e do CBO quando necessário<br /></li>
+<li>Ajuste do Compression Block Size<br /></li>
+</ul>
+<h2 id="o-que-utilizar-na-configuracao-do-meu-sparksession">O que utilizar na configuração do meu sparkSession?</h2>
+<div style="text-align: justify">
+O Spark oferece uma ampla variedade de configurações para otimizar e personalizar a sua sessão conforme as necessidades. Embora existam muitas opções, focaremos em algumas configurações fundamentais e relevantes:
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>.master("local[*]")</strong></td>
+<td>Determina o modo de execução para local. O [*] indica que o Spark deve usar todos os núcleos disponíveis no sistema.</td>
+</tr>
+<tr>
+<td><strong>spark.driver.cores</strong></td>
+<td>Configura o número de núcleos usados pelo driver do Spark.</td>
+</tr>
+<tr>
+<td><strong>spark.driver.memory</strong></td>
+<td>Estabelece a quantidade de memória a ser alocada pelo driver do Spark.</td>
+</tr>
+<tr>
+<td><strong>spark.default.parallelism</strong></td>
+<td>Define o paralelismo padrão, o número padrão de partições em operações RDD sem shuffling (como map).</td>
+</tr>
+<tr>
+<td><strong>spark.executor.cores</strong></td>
+<td>Especifica o número de núcleos a serem utilizados por cada executor.</td>
+</tr>
+<tr>
+<td><strong>spark.executor.instances</strong></td>
+<td>Configura o número de instâncias do executor.</td>
+</tr>
+<tr>
+<td><strong>spark.executor.memory</strong></td>
+<td>Define a quantidade de memória para cada executor.</td>
+</tr>
+<tr>
+<td><strong>spark.memory.fraction</strong></td>
+<td>Estabelece a fração da memória total do heap para armazenamento e computação.</td>
+</tr>
+<tr>
+<td><strong>spark.memory.storageFraction</strong></td>
+<td>Indica a fração da memória do Spark (baseado na configuração spark.memory.fraction) destinada ao cache de RDD.</td>
+</tr>
+<tr>
+<td><strong>spark.memory.offHeap.enabled</strong></td>
+<td>Ativa o uso de memória off-heap.</td>
+</tr>
+<tr>
+<td><strong>spark.memory.offHeap.size</strong></td>
+<td>Define a capacidade da memória off-heap.</td>
+</tr>
+<tr>
+<td><strong>spark.sql.repl.eagerEval.enabled</strong></td>
+<td>Habilita a avaliação ansiosa de DataFrames no REPL do Spark, útil para visualizações durante o desenvolvimento.</td>
+</tr>
+<tr>
+<td><strong>spark.sql.repl.eagerEval.maxNumRows</strong></td>
+<td>Configura o número máximo de linhas exibidas quando a avaliação ansiosa está ativa.</td>
+</tr>
+<tr>
+<td><strong>.appName()</strong></td>
+<td>Determina o nome da aplicação Spark.</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: justify">
+<strong>Configurações para GPUs (Nota: é essencial instalar e configurar os drivers da GPU. Informe-se mais antes de usar):</strong>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>spark.plugins</strong></td>
+<td>Lista os plugins a serem carregados. O <strong>com.nvidia.spark.SQLPlugin</strong> é o plugin SQL da NVIDIA para Spark, possibilitando que o Spark execute operações SQL em GPUs NVIDIA, acelerando consideravelmente operações como joins e agregações.</td>
+</tr>
+<tr>
+<td><strong>spark.executor.resource.gpu.amount</strong></td>
+<td>Define a quantidade de GPUs para cada executor.</td>
+</tr>
+<tr>
+<td><strong>spark.rapids.memory.pinnedPool.size</strong></td>
+<td>Estabelece o tamanho do pool de memória "pinned", utilizada para transferências eficientes entre CPU e GPU.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencias">Referências</h2>
+<p><a href="https://towardsdatascience.com/basics-of-apache-spark-configuration-settings-ca4faff40d45">Basics of Apache Spark Configuration Settings - Towards Data Science</a><br/>
+<a href="https://dataforgeeks.com/apache-spark-performance-tuning-and-best-practices/2305/">Apache Spark Performance Tuning and Best Practices - DataForGeeks</a><br/>
+<a href="https://ch-nabarun.medium.com/apache-spark-optimization-techniques-54864d4fdc0c">Apache Spark Optimization Techniques - Medium</a><br/>
+<a href="https://medium.com/analytics-vidhya/apache-spark-memory-management-49682ded3d42">Apache Spark Memory Management - Medium</a><br/>
+<a href="https://luminousmen.com/post/dive-into-spark-memory">Dive into Spark Memory - LuminousMen</a><br/>
+<a href="https://spark.apache.org/docs/latest/configuration.html">Spark Configuration - Official Documentation</a><br/>
+<a href="https://sparkbyexamples.com/spark/spark-performance-tuning/">Spark Performance Tuning - SparkByExamples</a><br/>
+<a href="https://sparkbyexamples.com/spark/spark-sql-performance-tuning-configurations/">Spark SQL Performance Tuning Configurations - SparkByExamples</a><br/></p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1201,12 +1460,12 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "navigation.tracking", "search.suggest", "content.code.annotate", "content.code.copy", "stylesheets/extra.css"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "navigation.tracking", "search.suggest", "content.code.annotate", "content.code.copy", "stylesheets/extra.css"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
       
-        <script src="/lightbox.js"></script>
+        <script src="../lightbox.js"></script>
       
     
   </body>

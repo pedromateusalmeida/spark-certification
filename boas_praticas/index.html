@@ -13,21 +13,25 @@
       
       
       
+        <link rel="prev" href="../configuracao_otimizacao_cluster/">
       
       
-      <link rel="icon" href="/favicon.ico">
+        <link rel="next" href="../apache_spark/">
+      
+      
+      <link rel="icon" href="../favicon.ico">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
-        <title>Certificação do Faísca</title>
+        <title>Boas Práticas de Uso do Spark - Certificação do Faísca</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -46,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="/lightbox.css">
+      <link rel="stylesheet" href="../lightbox.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,6 +80,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#referencias" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +101,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="/." title="Certificação do Faísca" class="md-header__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
+    <a href=".." title="Certificação do Faísca" class="md-header__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12V9c0 2.2 3.6 4 8 4s8-1.8 8-4v3c0 .5-.2.9-.5 1.4-.8-.3-1.6-.4-2.5-.4-2.5 0-4.9 1.1-6.4 2.9C6.8 15.6 4 14 4 12m8-1c4.4 0 8-1.8 8-4s-3.6-4-8-4-8 1.8-8 4 3.6 4 8 4m-2.9 8.7-.3-.7.3-.7c.1-.2.2-.3.2-.5-3.1-.6-5.3-2-5.3-3.8v3c0 1.8 2.4 3.3 5.7 3.8-.2-.3-.4-.7-.6-1.1M17 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1m6 1c-.9 2.3-3.3 4-6 4s-5.1-1.7-6-4c.9-2.3 3.3-4 6-4s5.1 1.7 6 4m-3.5 0c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5Z"/></svg>
@@ -112,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Boas Práticas de Uso do Spark
             
           </span>
         </div>
@@ -224,7 +233,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Certificação do Faísca" class="md-nav__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
+    <a href=".." title="Certificação do Faísca" class="md-nav__button md-logo" aria-label="Certificação do Faísca" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 12V9c0 2.2 3.6 4 8 4s8-1.8 8-4v3c0 .5-.2.9-.5 1.4-.8-.3-1.6-.4-2.5-.4-2.5 0-4.9 1.1-6.4 2.9C6.8 15.6 4 14 4 12m8-1c4.4 0 8-1.8 8-4s-3.6-4-8-4-8 1.8-8 4 3.6 4 8 4m-2.9 8.7-.3-.7.3-.7c.1-.2.2-.3.2-.5-3.1-.6-5.3-2-5.3-3.8v3c0 1.8 2.4 3.3 5.7 3.8-.2-.3-.4-.7-.6-1.1M17 18c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1m6 1c-.9 2.3-3.3 4-6 4s-5.1-1.7-6-4c.9-2.3 3.3-4 6-4s5.1 1.7 6 4m-3.5 0c0-1.4-1.1-2.5-2.5-2.5s-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5 2.5-1.1 2.5-2.5Z"/></svg>
@@ -253,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -272,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/sobre_certificacao/" class="md-nav__link">
+      <a href="../sobre_certificacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -289,6 +298,8 @@
       
   
   
+    
+  
   
     
     
@@ -298,14 +309,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -319,7 +328,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Configuração e Instalação
@@ -332,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/instalacao_local/" class="md-nav__link">
+      <a href="../instalacao_local/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -352,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/configuracao_otimizacao_cluster/" class="md-nav__link">
+      <a href="../configuracao_otimizacao_cluster/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -370,9 +379,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/boas_praticas/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Boas Práticas de Uso do Spark
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -381,6 +408,31 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -440,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/apache_spark/" class="md-nav__link">
+      <a href="../apache_spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/lazy_evaluation/" class="md-nav__link">
+      <a href="../lazy_evaluation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/rdd_spark/" class="md-nav__link">
+      <a href="../rdd_spark/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -500,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tolerancia_falhas/" class="md-nav__link">
+      <a href="../tolerancia_falhas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/arquitetura/" class="md-nav__link">
+      <a href="../arquitetura/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/aqe/" class="md-nav__link">
+      <a href="../aqe/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -608,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/broadcast/" class="md-nav__link">
+      <a href="../broadcast/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/catalyst_optimizer/" class="md-nav__link">
+      <a href="../catalyst_optimizer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/cache_persist/" class="md-nav__link">
+      <a href="../cache_persist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -668,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/memoria_serializacao/" class="md-nav__link">
+      <a href="../memoria_serializacao/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -688,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/shuffle/" class="md-nav__link">
+      <a href="../shuffle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -708,7 +760,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/transformacaos_acoes/" class="md-nav__link">
+      <a href="../transformacaos_acoes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/spark_ui/" class="md-nav__link">
+      <a href="../spark_ui/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -796,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/job/" class="md-nav__link">
+      <a href="../job/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/stages/" class="md-nav__link">
+      <a href="../stages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,7 +888,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/storage/" class="md-nav__link">
+      <a href="../storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -856,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/executors/" class="md-nav__link">
+      <a href="../executors/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -876,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/environment/" class="md-nav__link">
+      <a href="../environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -896,7 +948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/dag/" class="md-nav__link">
+      <a href="../dag/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,7 +1016,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/pyspark_cheat_sheet/" class="md-nav__link">
+      <a href="../pyspark_cheat_sheet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -984,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/funcoes_importante/" class="md-nav__link">
+      <a href="../funcoes_importante/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1004,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/createorplacetempview/" class="md-nav__link">
+      <a href="../createorplacetempview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1031,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/referencias/" class="md-nav__link">
+      <a href="../referencias/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1062,6 +1114,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#referencias" class="md-nav__link">
+    Referências
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1072,8 +1139,79 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+  <h1>Boas Práticas de Uso do Spark</h1>
+
+<div style="text-align: justify">
+<strong>1. Uso de UDFs (User Defined Functions)</strong><br /><br />
+Recomendação: Evite o uso excessivo de UDFs. Eles podem ser menos otimizados do que as funções nativas do Spark e, assim, reduzir o desempenho.
+<br /><br />
+<strong>2. Compreensão do Lazy Evaluation</strong><br /><br />
+O Spark utiliza um conceito chamado "Lazy Evaluation", ou seja, ele não executa uma operação até que seja absolutamente necessário. Recomendação: Esteja ciente dessa característica para evitar surpresas durante a execução.
+<br /><br />
+<strong>3. Uso de Cache</strong><br /><br />
+Utilize .cache() para armazenar um objeto (como um DataFrame) na memória. Isso pode acelerar operações subsequentes no mesmo objeto. Use .uncache() para remover um objeto previamente armazenado em cache da memória. Recomendação: Use o cache sabiamente. Não cache todos os DataFrames indiscriminadamente. Avalie quais objetos realmente beneficiariam do cache.
+<br /><br />
+<strong>4. Configurações para Otimização de Memória</strong><br /><br />
+Ative spark.sql.inMemoryColumnarStorage.compressed para armazenamento colunar comprimido em memória. Ao armazenar DataFrames em cache, prefira o formato colunar para otimizar o espaço e a velocidade de acesso.
+<br /><br />
+<strong>5. Otimizações de Join</strong><br /><br />
+Use "Broadcast Join" quando uma das tabelas em sua operação join for pequena o suficiente para caber na memória. A configuração spark.sql.autoBroadcastJoinThreshold determina o tamanho máximo de uma tabela que pode ser transmitida para todos os nós durante um join. Ajuste conforme necessário. Dica: [Broadcast Hash Join with Spark DataFrame](https://stackoverflow.com/questions/47744265/broadcast-hash-join-with-spark-dataframe)
+<br /><br />
+<strong>6. Ativação de Otimizadores</strong><br /><br />
+Ative o Otimizador Baseado em Custo (CBO) usando spark.sql.cbo.enabled. Ative o Adaptive Query Execution (AQE) com spark.sql.adaptive.enabled.
+<br /><br />
+</div>
+<div style="text-align: justify">
+<strong>7. Gerenciamento de Partições</strong><br /><br />
+Equilíbrio de Partições: Poucas partições podem resultar em alguns executores ociosos, enquanto muitas partições podem levar à sobrecarga de agendamento de tarefas. Encontrar o equilíbrio certo é essencial. Configuração de Partições: Defina a quantidade e o tamanho ideal das partições do seu RDD de acordo com o contexto do seu trabalho. Utilize a configuração spark.sql.shuffle.partitions (valor padrão é 200) para ajustar conforme necessário. Redução de Embaralhamento: O embaralhamento de dados pode ser uma operação custosa. Tente minimizá-la sempre que possível. Filtre Dados: Antes de realizar operações, filtre seus dados para trabalhar apenas com as informações necessárias.
+<br /><br />
+<strong>8. Evite Operações Custosas</strong><br /><br />
+Ordenação: Evite usar order by a menos que seja estritamente necessário. Seleção de Colunas: Em vez de usar select * para recuperar todas as colunas, especifique e recupere apenas as colunas relevantes para sua consulta.
+<br /><br />
+<strong>9. Uso Eficiente da Repartição e Coalesce</strong><br /><br />
+Se desejar reduzir o número de partições, prefira usar coalesce(). É uma versão otimizada em comparação com repartition(). O coalesce é mais eficiente, especialmente com grandes conjuntos de dados, pois move menos dados entre partições.
+<br /><br />
+<strong>10. Minimize operações com Shuffle e configure de paralelismo</strong><br /><br />
+O shuffle pode ser uma operação intensiva e pode afetar o desempenho. Portanto, tente evitar muitas operações que envolvam shuffle. spark.default.parallelism: Define o número padrão de partições em operações de RDD sem shuffle, como parallelize, map e filter. O padrão varia entre tipos de cluster. No local mode, o padrão é o número de núcleos disponíveis; em um cluster YARN, o padrão é o número máximo de tarefas simultâneas que Spark pode executar em todo o cluster.
+<br /><br />
+<strong>11. Configuração da Memória Off-Heap</strong><br /><br />
+A memória off-heap refere-se à alocação de memória fora da heap do Java, permitindo que o Spark use memória além da memória máxima configurada para a JVM. Ativação da Memória Off-Heap: spark.memory.offHeap.enabled: Ativa o uso da memória off-heap. Por padrão, é false. Para ativar, defina como true. spark.memory.offHeap.size: Define o tamanho da memória off-heap. Deve ser especificado em bytes, ou você pode usar sufixos padrão como "k", "m", "g", etc. (por exemplo, "512m").
+<br /><br />
+</div>
+<div style="text-align: justify">
+<strong>12. Modificar o Compression Block Size</strong><br /><br />
+A compressão pode ajudar a reduzir a quantidade de dados sendo transmitidos entre as fases e, consequentemente, acelerar o embaralhamento.<br />
+•   Compression Block Size:<br />
+•   spark.io.compression.lz4.blockSize: Define o tamanho do bloco para a compressão LZ4, quando essa compressão está sendo usada. O tamanho padrão é 32k.
+<br /><br />
+<strong>13. Broadcasting</strong><br /><br />
+Broadcasting é uma técnica usada no Spark para otimizar operações de join quando um dos DataFrames (ou RDDs) é pequeno o suficiente para ser enviado para todos os nós do cluster.<br />
+•   Usando Broadcasting: Carregue um pequeno conjunto de dados na memória para juntar-se a um grande conjunto de dados. Isso evita o embaralhamento e pode acelerar significativamente as operações de join.
+<br />
+</div>
+
+<h2 id="referencias">Referências</h2>
+<p><a href="https://sparkbyexamples.com/spark/difference-between-spark-sql-shuffle-partitions-and-spark-default-parallelism/">Spark Shuffle Partitions vs Default Parallelism</a><br />
+<a href="https://towardsdatascience.com/basics-of-apache-spark-configuration-settings-ca4faff40d45">Towards Data Science - Apache Spark Configuration</a><br />
+<a href="https://dataforgeeks.com/apache-spark-performance-tuning-and-best-practices/2305/">Data for Geeks - Apache Spark Performance Tuning</a><br />
+<a href="https://ch-nabarun.medium.com/apache-spark-optimization-techniques-54864d4fdc0c">Apache Spark Optimization Techniques by Ch-Nabarun</a><br />
+<a href="https://medium.com/analytics-vidhya/apache-spark-memory-management-49682ded3d42">Analytics Vidhya - Apache Spark Memory Management</a><br />
+<a href="https://luminousmen.com/post/dive-into-spark-memory">Dive into Spark Memory by Luminousmen</a><br />
+<a href="https://spark.apache.org/docs/latest/configuration.html">Official Spark Configuration Documentation</a><br />
+<a href="https://sparkbyexamples.com/spark/spark-performance-tuning/">Spark by Examples - Spark Performance Tuning</a><br />
+<a href="https://sparkbyexamples.com/spark/spark-sql-performance-tuning-configurations/">Spark by Examples - Spark SQL Performance Tuning</a><br /></p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1201,12 +1339,12 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "navigation.tracking", "search.suggest", "content.code.annotate", "content.code.copy", "stylesheets/extra.css"], "search": "/assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "toc.follow", "navigation.tracking", "search.suggest", "content.code.annotate", "content.code.copy", "stylesheets/extra.css"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
       
-        <script src="/lightbox.js"></script>
+        <script src="../lightbox.js"></script>
       
     
   </body>
